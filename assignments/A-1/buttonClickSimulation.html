@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">Click Me</button>
+    <p id="message">Waiting...</p>
+    <script type="text/javascript">
+        const buttonEle=document.getElementById("btn1");
+        const pEle=document.getElementById("message");
+        buttonEle.addEventListener("click",()=>{
+            pEle.textContent="Button clicked!";
+            setTimeout(()=>{pEle.textContent="Thanks for clicking!"},2000);
+        })
+    </script>
+</body>
+</html>
